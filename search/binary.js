@@ -1,4 +1,4 @@
-function linearSearch(arr, search) {
+function binarySearch(arr, search) {
     let lower = 0;
     let upper = arr.length - 1;
     // We must sort array by order ascendant
@@ -25,4 +25,4 @@ function linearSearch(arr, search) {
 }
 
 const array = [3, 17, 75, 80, 202];
-console.log(linearSearch(array, 80));
+console.log(binarySearch(array, 80));
