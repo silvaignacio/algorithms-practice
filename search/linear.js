@@ -1,3 +1,4 @@
+console.time("linearSearch");
 function linearSearch(arr, search) {
     arr.sort((a,b) => a -b);
 
@@ -10,5 +11,7 @@ function linearSearch(arr, search) {
     }
     return -1;
 }
+console.timeEnd("linearSearch");
+const array = Array.from({length: 10000000}, () => Math.floor(Math.random() * 10000000));
+console.log(linearSearch(array, 1));
 
-const arr = [0,1,2,3,4,5,6];

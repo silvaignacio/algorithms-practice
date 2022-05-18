@@ -1,3 +1,5 @@
+
+console.time("binarySearch");
 function binarySearch(arr, search) {
     let lower = 0;
     let upper = arr.length - 1;
@@ -23,6 +25,6 @@ function binarySearch(arr, search) {
     }
     return -1;
 }
-
-const array = [3, 17, 75, 80, 202];
+console.timeEnd("binarySearch");
+const array = Array.from({length: 10000000}, () => Math.floor(Math.random() * 10000000));
 console.log(binarySearch(array, 80));
